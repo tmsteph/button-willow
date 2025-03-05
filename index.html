@@ -4,66 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Willow Care Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f5f5dc;
-            color: #333;
-        }
-        header {
-            background-color: #6b8e23;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #6b8e23;
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        .contact a {
-            color: #6b8e23;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            background-color: #6b8e23;
-            color: white;
-        }
-    </style>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>Button Willow Care Services</header>
-    
-    <section>
-        <h2>House Sitting, Pet & Plant Care</h2>
-        <p>Going away? We ensure your home, plants, and pets are well cared for with love and attention.</p>
-        <h2>Professional Caregiving & Music Therapy</h2>
-        <p>Specialized care for elderly and differently-abled individuals, offering companionship, daily assistance, and music therapy sessions.</p>
-        
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:buttonwillow@example.com">buttonwillow@example.com</a></p>
-            <p>Phone: (123) 456-7890</p>
-        </div>
-    </section>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-green-700 text-white text-center py-6">
+        <h1 class="text-3xl font-bold">Button Willow Care Services</h1>
+        <p class="text-lg">Caring for Your Home, Garden, and Loved Ones</p>
+    </header>
 
-    <footer>
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <!-- Services Section -->
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Our Services</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- House Sitting, Pet & Plant Care -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">House Sitting, Pet & Plant Care</h3>
+                    <p>Ensure your home, pets, and plants are well-cared for during your absence. We provide attentive and loving care to keep everything in order.</p>
+                </div>
+                <!-- Gardening and Food-Forest Development -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Gardening and Food-Forest Development</h3>
+                    <p>Interested in starting or maintaining a garden or food-forest? We offer consultation and hands-on assistance to help you cultivate a sustainable and productive green space.</p>
+                </div>
+                <!-- Professional Caregiving & Music Services -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Professional Caregiving & Music Services</h3>
+                    <p>Providing compassionate care for individuals, including companionship, daily assistance, and therapeutic music sessions to enhance well-being.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold text-green-700 mb-4">Contact Us</h2>
+            <p>Email: <a href="mailto:buttonwillow@example.com" class="text-green-700 font-semibold">buttonwillow@example.com</a></p>
+            <p>Phone: <a href="tel:1234567890" class="text-green-700 font-semibold">(123) 456-7890</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white text-center py-4">
         &copy; 2025 Button Willow Care Services. All rights reserved.
     </footer>
 </body>
